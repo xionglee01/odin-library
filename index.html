@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+        </tr>
+    </table>
+
+    <div class="non-visible" id="modal">
+        <div class="container">
+            <button onclick="newBookForm()">CLOSE</button>
+            <div class="sub-container">
+                <form>
+                    <label for="title">Title </label>
+                    <input type="text" name="title" id="title">
+                    <label for="author">Author </label>
+                    <input type="text" name="author" id="author">
+                    <label for="pages">Pages </label>
+                    <input type="text" name="pages" id="pages">
+                    <label for="read">Read </label>
+                    <input type="text" name="read" id="read">
+                </form>
+                <button onclick="addtoLibrary()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="newBookForm()">NEW BOOK</button>
 
     <script src="script/script.js"></script>
 </body>
