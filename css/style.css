@@ -1,30 +1,75 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
 .non-visible
 {
     visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+    
 }
 
 .visible
 {
     visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
+
+
+/* NAVBAR */
+.navbar
+{
+    width: 100%;
+    background-color: white;
+}
+
+.navbar h1
+{
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#openModal
+{   
+    border: none;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+#openModal:hover
+{
+    color: rgb(199, 199, 199);
+    transition: 0.5s;
+}
+
+
 
 #modal
 {
     position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
-    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.068);
+    top: 0;
+    z-index: 9;
 }
 
 .container
 {
-    height: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 #modal button
@@ -38,6 +83,10 @@
     flex-direction: column;
     align-self: center;
     gap: 20px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
 }
 
 #modal form

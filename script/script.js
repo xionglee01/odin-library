@@ -1,4 +1,6 @@
 const myLibrary = [];
+const modal = document.querySelector("#modal");
+
 
 function Book(title, author, page, read)
 {    // constructor
@@ -24,6 +26,9 @@ function addtoLibrary()
 }
 
 
+//MAKE A CREATE CARD FUNCTION
+
+
 function addtoTable(book)
 {
     const table = document.querySelector("table");
@@ -39,17 +44,18 @@ function addtoTable(book)
 
 function newBookForm()
 {
-    const modal = document.querySelector("#modal");
     if(modal.className === "non-visible")
         modal.className = "visible";
     else
         modal.className = "non-visible";
 }
 
-const book1 = new Book("test", "test", "240", "yes");
-const book2 = new Book("Harry Potter", "test", "300", "yes");
-
-addBookToLibrary(book1);
-addBookToLibrary(book2);
-
+window.onclick = function(e)
+{
+    const container = document.querySelector(".container");
+    if(e.target === container)
+    {
+        modal.className = "non-visible";
+    }
+}
 console.log(myLibrary);

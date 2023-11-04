@@ -7,18 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
+    
+    <!-- <table>
         <tr>
             <th>Title</th>
             <th>Author</th>
             <th>Pages</th>
             <th>Read</th>
         </tr>
-    </table>
+    </table> -->
+
+    
+    <nav class="navbar">
+        <h1>LIBRARY</h1>
+    </nav>
 
     <div class="non-visible" id="modal">
         <div class="container">
-            <button onclick="newBookForm()">CLOSE</button>
             <div class="sub-container">
                 <form>
                     <label for="title">Title </label>
@@ -35,7 +40,7 @@
         </div>
     </div>
 
-    <button onclick="newBookForm()">NEW BOOK</button>
+    <button onclick="newBookForm()" id="openModal">NEW BOOK</button>
 
     <script src="script/script.js"></script>
 </body>
