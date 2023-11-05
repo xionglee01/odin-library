@@ -24,12 +24,13 @@
 
     <!-- CARD FOR BOOK -->
     <div class="cardContainer">
-        <div class="con">
+        <!-- <div class="con">
+            <button class="close non-visible">X</button>
             <h4>Title: <span id="cardTitle"></span></h4>
             <h4>Author: <span id="cardAuthor"></span></h4>
             <h4>Pages: <span id="cardPages"></span></h4>
             <h4>Read: <button onclick="changeRead.bind(this)()" class="read" id="readButton">YES</button></h4>
-        </div>
+        </div> -->
     </div>
 
     <div class="non-visible" id="modal">
@@ -46,7 +47,7 @@
                     </div>
                     <div>
                         <label for="pages">Pages </label>
-                        <input type="text" name="pages" id="pages">
+                        <input type="number" name="pages" id="pages" pattern="^[0-9]+$">
                     </div>
                     <div>
                         <label for="read">Read </label>

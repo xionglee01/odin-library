@@ -49,8 +49,8 @@ body
     height: 50px;
     border-radius: 50px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 10px;
 }
 
 #openModal:hover
@@ -159,9 +159,10 @@ div input
 {
     width: 200px;
     height: 200px;
-    background-color: #eee;
+    background-color: white;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.185);
 }
 
 
@@ -177,4 +178,16 @@ div input
     background-color: red;
     border: none;
     border-radius: 5px;
+}
+
+.close
+{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(241, 88, 88);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    float: right;
 }
