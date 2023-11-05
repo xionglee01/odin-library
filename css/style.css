@@ -3,6 +3,7 @@ body
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.11);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .non-visible
@@ -40,14 +41,22 @@ body
 #openModal
 {   
     border: none;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #openModal:hover
 {
     color: rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
     transition: 0.5s;
 }
 
@@ -74,7 +83,9 @@ body
 
 #modal button
 {
-    align-self: flex-end;
+    border: none;
+    background-color: rgb(41, 221, 41);
+    height: 50px;
 }
 
 .sub-container
@@ -82,15 +93,88 @@ body
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: space-between;
     gap: 20px;
     background-color: white;
     width: 300px;
     height: 400px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
 }
 
 #modal form
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    height:  100%;
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+#modal form div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+div label
+{
+    font-weight: bold;
+}
+
+
+#submit
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#submit:hover
+{
+    background-color:  rgb(108, 236, 108);
+    transition: 0.5s;
+}
+
+div input
+{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.cardContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 50px;
+    gap: 10px;
+}
+
+.con
+{
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.read
+{
+    background-color: rgba(91, 230, 91, 0.842);
+    border: none;
+    border-radius: 5px;
+}
+
+.notread
+{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
 }
